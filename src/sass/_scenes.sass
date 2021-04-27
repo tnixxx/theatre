@@ -1,0 +1,31 @@
+.scenes
+    &-title
+        margin-bottom: 30px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        &-item
+            margin-right: 30px
+            margin-bottom: 30px
+            position: relative
+            display: inline-block
+            &:last-child
+                margin-right: 0px
+                margin: 0 !important
+            &-text
+                position: absolute
+                top: 40px
+                left: 40px
+            &-img
+                max-width: 330px
+@media (max-width: 723px)
+    .scenes
+        &__list
+            &-item
+                &:nth-child(2)
+                    display: none
+                &:last-child
+                    display: none
+
+
+            

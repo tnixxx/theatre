@@ -11,15 +11,17 @@
 <body>
     <section class="section bg">
         <header>
-            <div class="container header-container">
-                <div class="header__nav">
-                    <a href="#" class="header__nav-link">Главная</a>
-                    <a href="#" class="header__nav-link">О театре</a>
-                    <a href="#" class="header__nav-link">Наши постановки</a>
-                    <a href="#" class="header__nav-link">Партнеры театра</a>
-                    <a href="#" class="header__nav-link">Контакты</a>
+            <div class="container">
+                <div class="header-container">
+                    <div class="header__nav">
+                        <a href="#" class="header__nav-link">Главная</a>
+                        <a href="#" class="header__nav-link">О театре</a>
+                        <a href="#" class="header__nav-link">Наши постановки</a>
+                        <a href="#" class="header__nav-link">Партнеры театра</a>
+                        <a href="#" class="header__nav-link">Контакты</a>
+                    </div>
+                    <a href="tel:+7 495 123-45-67" class="header-phone">+7 495 123-45-67</a>
                 </div>
-                <a href="tel:+7 495 123-45-67" class="header-phone">+7 495 123-45-67</a>
             </div>
         </header>
         <section>
@@ -27,7 +29,7 @@
                 <div class="hero">
                     <div class="hero__container col-xl-6">
                         <h4 class="hero__container-title">Большой театр</h4>
-                        <p class="hero__container-text">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p>
+                        <h1 class="hero__container-text">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</h1>
                         <button class="button btn hero__container-button">Афиша</button>
                     </div>
                 </div>
@@ -37,21 +39,24 @@
     <section>
         <div class="container">
             <div class="about">
-                <h3 class="about-title">О театре</h3>
+                <div class="title">
+                    <h3 class="title-yellow">О</h3>
+                    <h3 class="about-title">театре</h3>
+                </div>
                 <div class="about__info">
-                    <div class="about__info-container col-xl-5">
+                    <div class="about__info-container">
                         <h4 class="about__info-container-title">Самый лучший театр СПБ</h4>
-                        <p class="about__info-container-text">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
+                        <span class="about__info-container-text">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</p>
                     </div>
                     <div class="about__info-block">
                         <h4 class="about__info-block-title">Немного о цифрах</h4>
                         <div class="about__info-block-wrap">
                             <img src="img/about/armchair.svg" alt="" class="about__info-block-wrap-img">
-                            <p class="about__info-block-wrap-text">1600 посадочных мест</p>
+                            <div class="about__info-block-wrap-text d-flex"><span class="yellow">1600</span>посадочных мест</div>
                         </div>
                         <div class="about__info-block-wrap">
                             <img src="img/about/theater.svg" alt="" class="about__info-block-wrap-img">
-                            <p class="about__info-block-wrap-text">350 лет истории</p>
+                            <div class="about__info-block-wrap-text d-flex"><span class="yellow">350</span>лет истории</div>
                         </div>
                     </div>
                     <img src="img/about/theatre.png" alt="" class="about__info-img">
@@ -60,6 +65,58 @@
         </div>
     </section>
     <!-- делал блок наши постановки -->
-    section>.container>.scenes>h3.scenes-title+.scenes__wrap>
+    <section>
+        <div class="container">
+            <div class="scenes">
+                <div class="title">
+                    <h3 class="title-yellow">Наши</h3>
+                    <h3 class="scenes-title">постановки</h3>
+                </div>
+                <div class="scenes__list d-flex justify-content-center">
+                    <div class="scenes__list-item">
+                        <img src="img/scenes/scenes-1.png" alt="" class="scenes__list-item-img">
+                        <p class="scenes__list-item-text">Оскар</p>
+                    </div>
+                    <div class="scenes__list-item">
+                        <img src="img/scenes/scenes-2.png" alt="" class="scenes__list-item-img">
+                        <p class="scenes__list-item-text">Золотой грамофон</p>
+                    </div>
+                    <div class="scenes__list-item">
+                        <img src="img/scenes/scenes-3.png" alt="" class="scenes__list-item-img">
+                        <p class="scenes__list-item-text">Щелкунчик</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="rating">
+                <div class="rating__container">
+                    <span class="rating__container-years">2018</span>
+                    <span class="rating__container-years">2019</span>
+                    <span class="rating__container-years">2020</span>
+                </div>
+                <div class="rating__wrap">
+                    <div class="rating__wrap__block">
+                        <img src="img/rating/rating-star.svg" alt="" class="rating__wrap__block-stars">
+                        <img src="img/rating/rating-star.svg" alt="" class="rating__wrap__block-stars">
+                        <img src="img/rating/rating-star.svg" alt="" class="rating__wrap__block-stars">
+                        <img src="img/rating/rating-star.svg" alt="" class="rating__wrap__block-stars">
+                        <img src="img/rating/rating-star.svg" alt="" class="rating__wrap__block-stars">
+                    </div>
+                    <span class="rating__wrap-text">Лучший театр по мнению театральных критиков Парижа</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <span class="footer-text">(с) Все права защищены. Большой театр. 2020</span>
+                <span class="footer-text">Разработано d-e-n.ru</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
