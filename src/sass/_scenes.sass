@@ -18,14 +18,23 @@
                 left: 40px
             &-img
                 max-width: 330px
-@media (max-width: 723px)
+// @media (max-width: 723px)
+//     .scenes
+//         &__list
+//             &-item
+//                 &:nth-child(2)
+//                     display: none
+//                 &:last-child
+//                     display: none
+@media (max-width: 1073px)
     .scenes
         &__list
             &-item
-                &:nth-child(2)
-                    display: none
                 &:last-child
-                    display: none
-
-
-            
+                    margin-bottom: 30px !important
+@media (max-width: 340px)
+    .scenes
+        &-title
+            -moz-hyphens: auto
+            -webkit-hyphens: auto
+            -ms-hyphens: auto
